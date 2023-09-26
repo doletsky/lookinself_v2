@@ -1,0 +1,42 @@
+{% load static %}				
+				<!-- Header -->
+				{% include 'html/header.html' %}
+
+				<!-- Menu -->
+				{% include 'html/right_hide_menu.html' %}
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+						<article class="post">
+							<header>
+								<div class="title">
+									<h2><a href="#">"Большая пятерка"</a></h2>
+									<p>Большая пятерка личностных черт. Тест.</p>
+								</div>
+								<div class="meta">
+									<time class="published" datetime="2015-11-01">November 1, 2015</time>
+									<a href="#" class="author"><span class="name">Jane Doe</span><img src="{% static 'images/avatar.jpg' %}" alt="" /></a>
+								</div>
+							</header>
+							<a href="#" class="image featured"><img src="{% static 'images/pic01.jpg' %}" alt="" /></a>
+							<p>https://en.wikipedia.org/wiki/Big_Five_personality_traits<br>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+							<footer>
+								<ul class="actions">
+									<li><a href="test.html" class="button big">Пройти тест</a></li>
+								</ul>
+								<ul class="stats">
+									<li><a href="#">General</a></li>
+									<li><a href="#" class="icon fa-heart">28</a></li>
+									<li><a href="#" class="icon fa-comment">128</a></li>
+								</ul>
+							</footer>
+						</article>
+
+					</div>
+
+				<!-- Sidebar/left column -->
+				{% include 'html/left_column.html' %}
+
+{% include 'html/footer.html' %}

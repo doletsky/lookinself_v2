@@ -1,0 +1,42 @@
+{% extends "html/second_pages.html" %}
+
+{% block content %}
+    <h3>{{ title }}: Вопрос #1</h3>
+    <p>
+        Формулировка вопроса: Lorem ipsum dolor amet nullam consequat etiam feugiat
+    </p>
+    <hr>
+    <h3>Выберите ответ:</h3>
+    <div class="12u">
+        <input type="radio" id="demo-priority-low" name="demo-priority" checked>
+        <label for="demo-priority-low">Low</label>
+    </div>
+    <div class="12u">
+        <input type="radio" id="demo-priority-normal" name="demo-priority">
+        <label for="demo-priority-normal">Normal</label>
+    </div>
+    <div class="12u">
+        <input type="radio" id="demo-priority-high" name="demo-priority">
+        <label for="demo-priority-high">High</label>
+    </div>
+    <div class="12u">
+        <input type="checkbox" id="demo-copy" name="demo-copy">
+        <label for="demo-copy">Email me a copy</label>
+    </div>
+    <div class="12u">
+        <input type="checkbox" id="demo-human" name="demo-human" checked>
+        <label for="demo-human">Not a robot</label>
+    </div>
+</section>
+
+<ul class="actions fit">
+    <li><a href="#" class="button big fit">Отправить ответ и перейти далее</a></li>
+</ul>
+<footer>
+    <ul class="stats">
+        <li><a href="#">General</a></li>
+        <li><a href="#" class="icon fa-heart">28</a></li>
+        <li><a href="#" class="icon fa-comment">128</a></li>
+    </ul>
+</footer>
+{% endblock %}

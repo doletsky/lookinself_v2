@@ -1,0 +1,28 @@
+{% extends "html/second_pages.html" %}
+
+{% block content %}
+<h3>{{ title }}: Вход</h3>
+<form method="post" action="#">
+    <div class="row uniform 8u">
+        <div class="12u 12u$(xsmall)">
+            <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+        </div>
+        <div class="12u$ 12u$(xsmall)">
+            <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+        </div>
+        <div class="12u$">
+            <ul class="actions">
+                <li><input type="submit" value="Войти" /></li>
+                <li><input type="reset" value="Регистрация" /></li>
+            </ul>
+        </div>
+    </div>
+</form>
+<footer>
+<ul class="stats">
+    <li><a href="#">General</a></li>
+    <li><a href="#" class="icon fa-heart">28</a></li>
+    <li><a href="#" class="icon fa-comment">128</a></li>
+</ul>
+</footer>
+{% endblock %}
